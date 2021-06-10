@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>This is home page!</h1>
-<p>Something</p>
-<p>Something else</p>
-<p>SAnd onew more row</p>
-<p>Last row</p>
-{{greeting}}
-</body>
-</html>
+<h1>Vice Versa</h1>
+<form action="{% url 'reverse' %}">
+    <textarea cols="50" rows="50" name="usertext"></textarea>
+    <br><br>
+    <input type="submit" value="Reverse!">
+</form>

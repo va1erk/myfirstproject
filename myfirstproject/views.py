@@ -10,8 +10,12 @@ def about(request):
 
 
 def home(request):
-    return render(request, 'home.html', {'greeting': 'Hello!'})
+    return render(request, 'home.html')
 
 
 def viseverse(request):
     return render(request, 'viseverse.html')
+
+
+def reverse(request):
+    return render(request, 'reverse.html')
