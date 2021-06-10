@@ -18,4 +18,5 @@ def viseverse(request):
 
 
 def reverse(request):
-    return render(request, 'reverse.html')
+    user_text = request.GET['usertext']
+    return render(request, 'reverse.html', {'usertext':user_text, 'reversed':user_text[::-1]})
